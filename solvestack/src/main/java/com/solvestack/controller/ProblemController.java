@@ -76,7 +76,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/problems")
-@CrossOrigin(origins = "http://localhost:3000")
+// @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = {"http://localhost:3000", "https://solvetrack-frontend.vercel.app"})
 public class ProblemController {
 
     @Autowired
